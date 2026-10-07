@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root{
-  --bg:        #0e1013;
-  --bg-raised: #16191d;
-  --bg-card:   #1b1e23;
-  --line:      #292d33;
-  --text:      #ecebe6;
-  --text-dim:  #999da3;
-  --text-faint:#5f636a;
-  --accent:    #ede60a;   
-  --accent-2:  #ede60a;   
+  --bg:        #2a363b;
+  --bg-raised: #2a363b;
+  --bg-card:   #2a363b;
+  --line:      #edefe4;
+  --text:      #feefb3;
+  --text-dim:  #edefe4;
+  --text-faint:#edefe4;
+  --accent:    #feefb3;   
+  --accent-2:  #edebe4;   
   --radius:    2px;
   --font-display: 'Space Grotesk', sans-serif;
   --font-body:    'IBM Plex Sans', sans-serif;
@@ -23,7 +23,7 @@ html{ scroll-behavior: smooth; }
 
 body{
   margin: 0;
-  background: #0e1013;
+  background: #171e2b;
   color: #ecebe6;
   font-family: IBM Plex Sans, sans-serif;
   font-size: 16px;
@@ -92,9 +92,9 @@ h1 img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(14,16,19,0.86);
+  background: #171e2b;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+
 }
 .site-nav .wrap{
   display: flex;
@@ -136,8 +136,7 @@ h1 img {
 
 /* ---------- hero ---------- */
 .hero{
-  padding: 64px 0 40px;
-  border-bottom: 1px solid var(--line);
+  padding: 54px 0 40px;
 }
 .hero-eq-row{
   margin-bottom: 36px;
@@ -150,6 +149,7 @@ h1 img {
 }
 .hero h1{
   font-size: clamp(44px, 8vw, 84px);
+  color:#edebe4;
   margin-left: 100px;
   line-height: 0.98;
 }
@@ -160,6 +160,7 @@ h1 img {
 .roles{
   display: flex;
   flex-wrap: wrap;
+  
   gap: 10px;
   margin: 26px 0 34px;
   margin-left: 100px;
@@ -169,7 +170,7 @@ h1 img {
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text);
+  color: #edebe4;
   border: 1px solid var(--line);
   padding: 7px 12px;
   border-radius: var(--radius);
@@ -181,8 +182,8 @@ h1 img {
   margin-left: 100px;
 }
 .hero-copy a{
-  color: var(--accent);
-  border-bottom: 1px solid rgba(203,255,92,0.4);
+  color: #feefb3;
+  border-bottom: 1px solid;
 }
 .hero-copy a:hover{ border-bottom-color: var(--accent); }
 
@@ -247,7 +248,7 @@ section{ padding: 72px 0; }
 }
 .track:hover{
   padding-left: 10px;
-  background: linear-gradient(90deg, rgba(203,255,92,0.05), transparent);
+  background: linear-gradient(90deg, rgba(246, 238, 233, 0.05), transparent);
 }
 .track-num{
   font-family: var(--font-mono);
@@ -320,7 +321,7 @@ section{ padding: 72px 0; }
 /* ---------- about page ---------- */
 .about-hero{
   padding: 56px 0 20px;
-  border-bottom: 1px solid var(--line);
+  
 }
 .about-grid{
   display: grid;
@@ -360,11 +361,10 @@ section{ padding: 72px 0; }
 .pill-row span{
   font-family: var(--font-mono);
   font-size: 12px;
-  color: var(--text);
-  border: 1px solid var(--line);
+  color: white;
+  border: 1px solid var(--accent);
   padding: 6px 11px;
   border-radius: var(--radius);
-  background: var(--bg-card);
 }
 
 .contact-block{
@@ -386,13 +386,14 @@ section{ padding: 72px 0; }
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent-2);
+  color: var(--accent);
 }
 .project-title{
   font-size: clamp(32px, 6vw, 56px);
   margin: 14px 0 26px;
-  max-width: 25ch;
+  max-width: 25ch;  
 }
+  
 .project-tags{
   display: flex;
   gap: 10px;
