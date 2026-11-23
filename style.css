@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gabarito:wght@400..900&family=Gasoek+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Nabla&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gabarito:wght@400..900&family=Gasoek+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Great+Vibes&family=Mrs+Sheppards&family=Nabla&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+Balinese&family=Petit+Formal+Script&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
   --bg:        #2a363b;
   --bg-raised: #2a363b;
   --bg-card:   #2a363b;
   --line:      #edefe4;
-  --text:      #4d8fdb;
+  --text:      #dbbf4d;
   --text-dim:  #edefe4;
   --text-faint:#edefe4;
-  --accent:    #4d8fdb;   
+  --accent:    #dbbf4d;   
   --accent-2:  #ede6e4;   
   --radius:    2px;
   --font-display: 'Figtree', sans-serif;
@@ -23,7 +23,7 @@ html{ scroll-behavior: smooth; }
 
 body{
   margin: 0;
-  background: #131822;
+  background: #131314;
   color: #ecebe6;
   font-family: Figtree, sans-serif;
   font-size: 16px;
@@ -92,7 +92,7 @@ h1 img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #131822;
+  background: #131314;
   backdrop-filter: blur(10px);
 
 }
@@ -149,10 +149,14 @@ h1 img {
 }
 .hero h1{
   font-size: clamp(44px, 8vw, 84px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  font-family: "Newsreader", serif;
   color:#edebe4;
   margin-left: 100px;
   line-height: 0.98;
 }
+
 .hero h1 em{
   font-style: normal;
   color: var(--accent);
@@ -160,7 +164,6 @@ h1 img {
 .roles{
   display: flex;
   flex-wrap: wrap;
-  
   gap: 10px;
   margin: 26px 0 34px;
   margin-left: 100px;
@@ -176,13 +179,13 @@ h1 img {
   border-radius: var(--radius);
 }
 .hero-copy{
-  max-width: 560px;
+  max-width: 580px;
   color: var(--text-dim);
   font-size: 17px;
   margin-left: 100px;
 }
 .hero-copy a{
-  color: #4d8fdb;
+  color: #dbbf4d;
   border-bottom: 1px solid;
 }
 .hero-copy a:hover{ border-bottom-color: var(--accent); }
@@ -229,6 +232,9 @@ section{ padding: 72px 0; }
 }
 .section-head h2{
   font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  font-family: "Newsreader", serif;
   margin-top: 10px;
   margin: 0 auto;
 }
@@ -253,7 +259,7 @@ section{ padding: 72px 0; }
 .track-num{
   font-family: var(--font-mono);
   color: var(--text-faint);
-  font-size: 14px;
+  font-size: 15px;
 }
 .track-main{ min-width: 0; }
 .track-cat{
@@ -266,9 +272,10 @@ section{ padding: 72px 0; }
   display: block;
 }
 .track-title{
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Newsreader", serif;
+  font-size: 23px;
+  font-weight: 300;
+  letter-spacing: -0.05em;
   color: var(--text);
 }
 .track:hover .track-title{ color: var(--accent); }
